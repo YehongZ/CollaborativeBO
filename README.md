@@ -21,7 +21,7 @@ pickle
 
 ## Experiments
 
-Hartmann-$6d$ function
+Hartmann-6d function
 ```
 python run_hartmann.py --c1 0.08 --c2 5 --noise 0.01
 ```
