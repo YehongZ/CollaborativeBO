@@ -19,6 +19,8 @@ tenorflow 2
 
 pickle
 
+joblib
+
 ## Experiments
 
 Hartmann-6d function
