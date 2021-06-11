@@ -83,7 +83,7 @@ def main():
     for base in [1,0.8,0.6,0.4,0.2]:
         ws = torch.pow(base, torch.arange(nAgent))
 
-        experimentNO = exp + '_base={}_c1={}_vary={}'.format(base, C1, vary).replace('.', 'p')
+        experimentNO = exp + '_base={}_c1={}_vary={}'.format(base, C1, vary)
 
         with torch.no_grad():
             obsXAll = torch.empty(nLoop, nAgent, nT, d)
