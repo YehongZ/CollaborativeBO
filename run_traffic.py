@@ -45,7 +45,7 @@ def main():
     for base in [1,0.8,0.6,0.4,0.2]:
         ws = torch.pow(base, torch.arange(nAgent))  # geometric weights
 
-        experimentNO = 'traffic_ns={}_nAgent={}_base={}_C1={}'.format(ns, nAgent, base, C1)
+        experimentNO = 'traffic_ns={}_nAgent={}_base={}_C1={}_vary={}'.format(ns, nAgent, base, C1, vary)
 
         with torch.no_grad():
             obsXAll = torch.empty(nLoop, nAgent, nT, d)
