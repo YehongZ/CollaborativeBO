@@ -47,7 +47,7 @@ def main():
     for base in [1,0.8,0.6,0.4,0.2]:
         ws = torch.pow(base, torch.arange(nAgent))
 
-        experimentNO = 'hartmann_nAgent={}_OWA_base={}_C1={}_std={}'.format(nAgent, base, C1, noise_std)
+        experimentNO = 'hartmann_nAgent={}_OWA_base={}_C1={}_std={}_vary={}'.format(nAgent, base, C1, noise_std, vary)
 
         with torch.no_grad():
             obsXAll = torch.empty(nLoop, nAgent, nT, d)
